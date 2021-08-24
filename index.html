@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="heading-1 u-mb-l">Add a book to your library</h1>
+    <form action="" class='form' id='book-form'>
+      <div class="close-btn">X</div>
+      <div class='input u-mb-m field'>
+        <label for="title"></label>
+        <input type="text" name="title" id="title" placeholder='Title' onfocus="this.placeholder=''"
+          onblur="this.placeholder='Title'">
+      </div>
+      <div class='input u-mb-m field'>
+        <label for="author"></label>
+        <input type="text" name="author" id="author" placeholder='Author' onfocus="this.placeholder=''"
+          onblur="this.placeholder='Author'">
+      </div>
+      <div class='input u-mb-m field'>
+        <label for="num-pages"></label>
+        <input type="text" name="num-pages" id="num-pages" placeholder='Number of pages' onfocus="this.placeholder=''"
+          onblur="this.placeholder='Number of pages'">
+      </div>
+      <div class='isRead u-mb-m'>
+        <p class="u-mb-s">Have you read it?</p>
+        <div>
+          <input type="radio" name="isRead" id="yes" value='yes' checked='checked'>
+          <label for="yes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" name="isRead" id="no" value='no'>
+          <label for="no">No</label>
+        </div>
+      </div>
+      <input type="submit" value="add" class='add' id='add'>
+    </form>
+  </div>
+  <script src='index.js'></script>
+</body>
+
+</html>

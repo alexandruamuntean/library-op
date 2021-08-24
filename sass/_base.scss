@@ -1,0 +1,103 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Breaking it down
+We start with box-sizing. I just flat out reset all elements and pseudo-elements to use box-sizing: border-box. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* font imports */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
+
+/* root values */
+:root {
+  --primary: rgba(250, 93, 93, 0.9);
+  --secondary: hsl(154, 59%, 51%);
+  --tertiary-accent: hsl(248, 32%, 49%);
+  --dark-neutral: hsl(249, 10%, 26%);
+  --dark-neutral-light: hsl(249, 10%, 50%);
+  --gray-neutral: hsl(246, 25%, 77%);
+  --shadow-1: 0px 10px 0px rgba(0, 0, 0, 0.2);
+  --shadow-2: 0px 4px 0px hsl(154, 59%, 42%);
+  --shadow-2--active: 0px 2px 0px hsl(154, 59%, 42%);
+  --button--active: translateY(2px);
+  --animation-short: all 0.1s ease-out;
+}
