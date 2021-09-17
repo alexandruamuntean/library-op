@@ -1,0 +1,33 @@
+.u-mb-l {
+  margin-bottom: 40px;
+}
+
+.u-mb-m {
+  margin-bottom: 20px;
+}
+
+.u-mb-s {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.toggle-main {
+  margin-left: 0;
+}
+
+.toggle-header {
+  transform: translateX(-38.5rem);
+}
+
+.toggle-button {
+  transform: rotate(180deg);
+}
+
+@mixin flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

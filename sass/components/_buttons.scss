@@ -1,0 +1,133 @@
+// delete btn
+.delete-btn {
+  cursor: pointer;
+  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: none;
+  transition: var(--animation-short);
+
+  &:hover {
+    background-color: var(--primary--highlight);
+    transform: var(--button--active);
+  }
+}
+
+// add/remove button
+
+.remove {
+  display: inline-block;
+  position: relative;
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 15rem;
+  @include flex-center-all;
+  box-shadow: var(--shadow-3);
+  transition: var(--animation-short);
+
+  &__symbol {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    @include flex-center-all;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: white !important;
+    color: var(--dark-neutral);
+    border-radius: 50%;
+    transition: var(--animation-medium);
+  }
+
+  &__text {
+    margin-left: 2rem;
+    transition: var(--animation-medium);
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary--highlight);
+    box-shadow: var(--shadow-3--active);
+    transform: var(--button--active);
+  }
+}
+
+.remove:hover {
+  .create__symbol {
+    transform: translate(15%, -50%);
+  }
+  .create__text {
+    transform: translateX(5%);
+  }
+}
+
+// read button
+.button-read--y,
+.button-read--n {
+  height: 3.5rem;
+  padding: 0 1.5rem;
+  border: 1px solid var(--gray-neutral);
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: var(--animation-short);
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    transform: var(--button--active);
+  }
+}
+
+.button-read--y {
+  box-shadow: var(--shadow-2);
+  background-color: var(--secondary);
+
+  &:hover {
+    background-color: var(--secondary--highlight);
+    box-shadow: var(--shadow-2--active);
+  }
+}
+
+.button-read--n {
+  box-shadow: var(--shadow-3);
+  background-color: var(--primary);
+
+  &:hover {
+    background-color: var(--primary--highlight);
+    box-shadow: var(--shadow-3--active);
+  }
+}
+
+//toggle form button
+.toggle-form {
+  cursor: pointer;
+  font-size: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: white;
+  background-color: var(--dark-neutral);
+  text-align: center;
+  border: none;
+  //
+
+  span {
+    transition: var(--animation-short);
+  }
+
+  &:hover {
+    span {
+      display: block;
+      transform: scale(1.2);
+    }
+  }
+}

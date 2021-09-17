@@ -1,3 +1,10 @@
-@import "base";
-@import "components";
-@import "layout";
+@import "base/base";
+@import "layout/layout";
+@import "utilities/typography";
+@import "utilities/utilities";
+@import "utilities/animations";
+@import "components/form";
+@import "components/buttons";
+@import "components/logo";
+@import "components/slider";
+@import "components/table";

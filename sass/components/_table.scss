@@ -1,0 +1,65 @@
+.table {
+  width: 72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+    top: 4rem;
+    width: 72rem;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 6rem;
+    border-radius: 1rem;
+
+    &:not(last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      margin-left: 2rem;
+    }
+    &:last-child {
+      margin-right: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__author,
+  &__pages {
+    font-size: 1.2rem;
+  }
+
+  &__read {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.summary {
+  &__heading {
+    margin-bottom: -0.5rem;
+  }
+  &__text {
+    color: var(--dark-neutral-light);
+  }
+}
